@@ -41,16 +41,21 @@ color: #f4d72f;
 
 main{
     min-height: 100vh;
-    background-color: lightcoral;
+    background-color: black;
     display: grid;
     grid-template-columns: 55% 45%;
     padding: 80px 5%;
 
 }
+main>.right>img{
+    height: 700px;
+    margin-left: 130px;
+}
 
 main>.left{
     background-color: #111;
     color: white;
+    border-radius: 30px;
 }
 
 .left>span{
