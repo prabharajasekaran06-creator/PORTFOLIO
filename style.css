@@ -82,6 +82,9 @@ margin-bottom: 15px;
     color: #ccc;
     margin-bottom: 15px;
 }
+.left span{
+    color: yellow;
+}
 
 .left>button{
     padding: 15px 20px;
@@ -117,3 +120,31 @@ margin-bottom: 15px;
     width: 70%;
     margin: 0 auto;
 }
+
+#about> .card{
+    background-color: #222;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid white;
+    transition: all 0.1s ease-in;
+
+}
+
+#about> .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 4px 13px yellow;
+}
+
+.card>h2{
+    font-size: 45px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.card>p{
+    font-size: 19px;
+    color:#575454;
+}
+
