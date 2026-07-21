@@ -95,9 +95,25 @@ margin-bottom: 15px;
     cursor: pointer;
 }
 
- /* main>.right{
-    background-color: lightgreen;
-} */
+/* about section css */
 
-/* .right{
-} */
+#about{
+    padding: 80px 5%;
+    background-color: #111;
+    color: white;
+}
+
+#about>h1{
+    text-align: center;
+    font-size: 75px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#about>p{
+    text-align: center;
+    font-size: 21px;
+    width: 70%;
+    margin: 0 auto;
+}
