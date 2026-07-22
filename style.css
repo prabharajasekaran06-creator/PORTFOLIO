@@ -7,6 +7,10 @@
     font-family: "poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* css for nav Bar */
 
 nav {
@@ -17,6 +21,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
+    position: sticky;
+    top: 0;
+    z-index: 6;
 }
 nav>ul{
     display: flex;
@@ -35,6 +42,27 @@ nav a{
 
 nav>h1{
 color: #f4d72f;
+}
+
+nav li{
+    position: relative;
+    
+}
+
+nav li::after{
+    content: " ";
+    height:5px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+nav li:hover::after{
+    width:100%;
 }
 
 /* css for main */
@@ -89,6 +117,16 @@ margin-bottom: 15px;
 }
 .left span{
     color: yellow;
+    animation: textmagic 1s ease-in infinite alternate;
+}
+
+@keyframes textmagic{
+    from{
+        width: och;
+    }
+    to{
+        width: 10ch;
+    }
 }
 
 .left>button{
@@ -101,6 +139,14 @@ margin-bottom: 15px;
     font-size: 19px;
     letter-spacing: 1.3px;
     cursor: pointer;
+    margin:10px 100px;
+}
+
+.left>button:hover{
+    background-color: #111;
+    color: #f4d72f;
+    box-shadow: 1px 4px 10px #f4d72f;
+
 }
 
 /* about section css */
@@ -206,5 +252,99 @@ margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 100px;
 }
+
+/* contact section css */
+
+#contact{
+    padding: 100px 10%;
+    background-color: #111;
+    color: white;
+
+}
+
+#contact>h1{
+        text-align: center;
+    font-size: 75px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+
+}
+
+#contact>p{
+    text-align: center;
+    font-size: 21px;
+    width: 70%;
+    margin: 15px auto;
+}
+#contact>form{
+    background-color: #333;
+    width: 70%;
+    margin: 15px auto;
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+
+}
+#contact>form:hover{
+     box-shadow: 1px 4px 10px rgb(205, 221, 86);
+     cursor: pointer;
+}
+
+form>input{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #494747;
+    color: white;
+}
+
+form>textarea{
+    display: block;
+    padding: 15px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #494747;
+    color: white;
+    resize: none;
+}
+
+form>button{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px auto;
+    letter-spacing: 1.5px;
+}
+
+/* footer style */
+
+footer{
+    height: 80px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+footer>p{
+    font-size: 19px;
+    text-transform: capitalize;
+    letter-spacing: 1.4px;
+}
+
